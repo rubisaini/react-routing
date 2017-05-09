@@ -13,11 +13,9 @@ render(<Router>
         <Link to="/about-us">About Us</Link> >>
         <Link to="/contact-us">Contact Us</Link>
         <Switch>
-
-        <Route path="/contact-us" component={ContactUs}/>
-        <Route path="/about-us" render={(props) => (<AboutUs {...props} phoneNo="9654173324" />)}/>
+            <Route path="/contact-us" component={ContactUs}/>
+            <Route path="/about-us" render={(props) => (<AboutUs {...props} phoneNo="9654173324" />)}/>
             <Route path="/" component={Home}/>
-
         </Switch>
     </div>
 </Router>, document.getElementById('app'));
